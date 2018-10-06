@@ -1,32 +1,169 @@
-.App {
+@import '~antd/dist/antd.css';
+.header-color {
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.landing-grid {
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.avartar-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px rgba(80, 80, 80, 0.22)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner-text {
+  background-color: #434343;
+  opacity: .7;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 55px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text hr {
+  width: 65%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 4em;
+  padding: 8px;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+.contact-body {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 7em;
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contact-list h2 {
+  display: inline;
+  font-size: 30px;
+  font-family: 'Anton';
+}
+
+.contact-list h3 {
+  display: inline;
+  font-size: 30px;
+  font-family: 'Anton';
+}
+
+.contact-list i {
+  font-size: 50px;
+  padding-right: 30px;
+}
+.contact-img {
+  margin-bottom: 30px;
+  box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px rgba(80, 80, 80, 0.22)
+}
+
+.aboutme-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+@media screen and (max-width:667px) {
+
+  .banner-text{
+    width: 70%;
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .banner-text h1 {
+    font-size: 40px;
+  }
+  .banner-text p {
+    font-size: 18px;
+  }
+
+  .social-links {
+    width: 50%;
+  }
+
+  .social-links i {
+    color: white;
+    font-size: 2em;
+    padding: 8px;
+  }
+
+  .landing-grid {
+    position: relative;
+  }
+
+  .contact-body {
+    position: relative;
+  }
+
+  .contact-list h2 {
+    font-size: 20px;
+  }
+
+  .contact-list h3 {
+    font-size: 15px;
+  }
+
+  .contact-list i {
+    font-size: 25px;
+  }
+  
+  .reply-btn {
+    margin-top: 10px;
+    margin-left: 140px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .projects-grid {
+    display: block;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .contact-grid {
+    display: block;
   }
 }
